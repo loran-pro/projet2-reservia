@@ -1,0 +1,297 @@
+/* ///////////////////////////////////////////////////// */
+/*                   Generic styling                     */
+/* ///////////////////////////////////////////////////// */
+body{
+  font-family: 'Raleway', sans-serif;
+  background-color: bisque;
+  margin: 0;
+}
+
+header{
+  display: flex;
+	flex-direction: row;
+  /* flex: auto; */
+  align-items: end;
+  background-color: green;
+  height: 75px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  background-color: #F2F2F2;
+}
+
+nav{
+  flex: auto;
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  background-color: grey;
+  /* position: relative;
+  right: -20px;
+  bottom: 0px;
+  height: 75px; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: small;
+}
+
+img{
+  object-fit: cover;
+}
+
+h1{
+  font-size: large;
+}
+
+h3{
+  font-size: small;
+}
+
+p {
+  font-size: small;
+}
+
+.recherche{
+  display: flex;
+  padding: 1px;
+  box-sizing: border-box;
+  align-items: baseline;
+}
+
+.bouton_rechercher {
+  border-radius: 0px 10px 10px 0px;
+  background-color: #0065FC;
+  border: none;
+  color: white;
+  padding: 10px;
+  /* text-decoration: none; */
+  /* text-align: center; */
+  /* display: inline-block; */
+  font-size: 14px;
+  cursor: pointer;
+}
+.bouton_rechercher:hover {
+  background-color: white;
+  color: black;
+}
+
+.barre_de_recherche{
+  border: none;
+  padding: 10px;
+}
+
+.filtre{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.cadre_arrondi{
+	border-radius: 15px;
+}
+
+.blanc{
+  background-color: white;
+  box-shadow: 0 0 1em grey;
+}
+
+.gris{
+  background-color: #F2F2F2;
+}
+
+.padded{
+padding: 15px 30px;
+}
+
+.hebergement{
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.populaire{
+  display: flex;
+  padding: 3px;
+}
+
+.activite{
+  background-color: aqua;
+}
+
+.descriptif{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px 5px 10px;
+  font-size: 11px;
+  border: 0px;
+  background-color: aquamarine;
+}
+
+.navFooter{
+ /* background-color: #df00fc;  */
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ box-sizing: border-box;
+ width: 75%;
+}
+
+.navFooterCol{
+  display: flex;
+  flex-direction: column;
+}
+
+.fas{
+  color: #0065FC;
+}
+
+.fa-map-marker-alt{
+  color: black;
+  padding: 0px 15px;
+}
+
+/* .fa-info-circle{
+  color: white;
+  
+} */
+
+.fa-chart-line{
+  color: black;
+}
+
+.empty{
+  color: #F2F2F2;
+}
+/* ///////////////////////////////////////////////////// */
+/*                   Specific styling                    */
+/* ///////////////////////////////////////////////////// */
+
+#contenu_de_la_page{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#logo{
+  background-color: chocolate;
+}
+
+
+header img{
+  background-color: red;
+  height: 50px;
+}
+
+
+
+
+nav ul {
+  display: flex;
+  /* align-items: right; */
+  /* flex-direction: row-reverse; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  background-color: violet;
+  /* outline-color: red; */
+}
+
+nav li {
+    padding: 0px 20px;
+}
+
+
+
+#filtres {
+  display: flex;
+  flex-direction: row;
+}
+
+#hebergements_et_populaires{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+#populaires{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+#hebergements{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5em;
+}
+
+#activites{
+  display: flex;
+  margin: auto;
+  background-color: chartreuse;
+  justify-content: space-between;
+}
+
+#hebergements img{
+  border-radius: 15px 15px 0px 0px;
+  height: 80px;
+  width: 168px;
+}
+
+#populaires img{
+  border-radius: 15px 0px 0px 15px;
+  height: 105px;
+  width: 100px;
+  align-items: stretch;
+}
+
+#activites img{
+  border-radius: 15px 15px 0px 0px;
+  height: 100%;
+  max-width: 200px;
+}
+
+#activites article{
+  display: flex;
+  flex-direction: column;
+}
+
+#activites h3{
+  margin: 15px;
+}
+
+#A_propos{
+  block-size: 33%;
+}
+
+#Nos_hebergements{
+}
+
+#Assistance{
+}
+
+.hebergement .descriptif > *{
+  margin: 2px 0px;
+}
+
+#populaire.descriptif{
+  margin-top: 500px;
+}
+
+#Afficher_plus{
+  margin-bottom: 0px;
+}
+
+#les_plus_populaires{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
